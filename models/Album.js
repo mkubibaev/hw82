@@ -12,7 +12,7 @@ const AlbumSchema = new Schema({
         ref: 'Artist',
         required: true,
     },
-    createdYear: String,
+    year: String,
     image: String
 });
 

@@ -37,7 +37,7 @@ router.post('/', upload.single('image'),(req, res) => {
 
     artist.save()
         .then(result => res.send(result))
-        .catch(error => res.status)
+        .catch(error => res.status(400).send(error))
 
 });
 
