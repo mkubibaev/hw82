@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
             .catch(() => res.sendStatus(500));
     } else {
         Album.find()
-            .then(artists => res.send(artists))
+            .then(result => res.send(result))
             .catch(() => res.sendStatus(500));
     }
 });
